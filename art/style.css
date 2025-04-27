@@ -5,6 +5,6 @@ strong{
 body,html{
     background: linear-gradient(135deg,rgba(6, 209, 84, 1) 0%, rgba(255, 246, 161, 1) 100%);
 }
-head{
+head::before{
    content:"<a href=\"https://greenfenix414.github.io/site\">Main 1 page!</a>" 
 }

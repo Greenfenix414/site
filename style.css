@@ -68,3 +68,12 @@ zoom{
     margin-left: auto;
     margin-right: auto;
   }
+  a{
+    text-decoration: none;
+    color: violet;
+  }
+  a:visited{
+    text-decoration: none;
+    color: pink;
+  }
+

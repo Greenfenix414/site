@@ -1,0 +1,7 @@
+strong{
+    color:rgb(128, 0, 0)
+
+}
+body,html{
+    background: linear-gradient(135deg,rgba(6, 209, 84, 1) 0%, rgba(255, 246, 161, 1) 100%);
+}

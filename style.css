@@ -5,47 +5,132 @@ strong{
 body,html{
     background: linear-gradient(135deg,rgba(6, 209, 84, 1) 0%, rgba(255, 246, 161, 1) 100%);
 }
-zoom{
-    animation: jump 0.5s
+zoom {
+  animation: jump 0.5s;
+}
+shake {
+  font-weight: 700;
+  animation: shake 0.2s infinite;
+  text-decoration: overline rgb(81, 133, 68) 2px;
+}
+shake:hover {
+  font-weight: 700;
+  animation: none;
+  text-decoration: overline rgb(81, 133, 68) 2px;
+}
+
+@keyframes shake {
+  0% {
+    padding-left: 3px;
+    padding-right: 0px;
+    padding-top: 0px;
+    padding-bottom: 3px;
   }
-  shake{
-    font-weight:700;
-    animation: shake 0.2s infinite;
-  text-decoration: overline violet 2px;  
-    
+  50% {
+    padding-left: 0px;
+    padding-right: 3px;
+    padding-top: 3px;
+    padding-bottom: 0px;
   }
-  shake:hover{
-    font-weight:700;
-    animation:none;
-  text-decoration: overline violet 2px;  
+  100% {
+    padding-left: 3px;
+    padding-right: 0px;
+    padding-top: 0px;
+    padding-bottom: 3px;
   }
-  
-  @keyframes shake{
-    0%{
-      padding-left:3px;
-      padding-right:0px;
-      padding-top:0px;
-      padding-bottom:3px
-    }
-      50%{
-          padding-left:0px;
-      padding-right:3px;
-         padding-top:3px;
-        padding-bottom:0px
-    }
-        100%{
-          padding-left:3px;
-      padding-right:0px;
-          padding-top:0px;
-            padding-bottom:3px;
-    }
+}
+@keyframes jump {
+  0% {
+    padding-right: 100%;
   }
-  @keyframes jump{
-    0%{padding-right:100%}
-    100%{padding-right:0px}
-    
-    
+  100% {
+    padding-right: 0px;
   }
+}
+strong {
+  background: rgb(120, 255, 186);
+}
+a {
+  font-weight: 700;
+  text-decoration: none;
+  color: #117900;
+}
+a:hover {
+  font-weight: 700;
+  text-decoration: underline#117900 2px;
+  color: #117900;
+  cursor: pointer;
+}
+a:visited {
+  font-weight: 700;
+  text-decoration: none;
+  color: #00795A;
+}
+a:hover:visited {
+  font-weight: 700;
+  text-decoration: underline#00795A 2px;
+  color: #00795A;
+  cursor: pointer;
+}
+.bottomright {
+  width: 0px;
+  height: 0px;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  border: 10px solid rgb(177, 98, 255);
+  background: rgb(177, 98, 255);
+}
+.bottomright:hover {
+  animation: openup 0.2s;
+  width: 200px;
+  height: 200px;
+  background: rgb(177, 98, 255);
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  border: 10px solid #32E4C4;
+}
+@keyframes openup {
+  0% {
+    width: 0px;
+    height: 0px;
+    border: 10px solid rgb(177, 98, 255);
+    background: rgb(177, 98, 255);
+  }
+  25% {
+    border: 10px solid rgb(177, 98, 255);
+    background: rgb(177, 98, 255);
+  }
+  100% {
+    width: 200px;
+    height: 200px;
+    border: 10px solid #32E4C4;
+  }
+}
+a.plink {
+  font-weight: 700;
+  text-decoration: none;
+  color: #CC5F00;
+}
+a.plink:hover {
+  font-weight: 700;
+  text-decoration: underline #CC5F00 2px;
+  color: #CC5F00;
+  cursor: pointer;
+}
+a.plink:visited {
+  font-weight: 700;
+  text-decoration: none;
+  color: #CC1100;
+}
+a.plink:hover:visited {
+  font-weight: 700;
+  text-decoration: underline #CC1100 2px;
+  color: #CC1100;
+  cursor: pointer;
+}
+
   .shelf {
     display: block;
     z-index: 9;
@@ -67,13 +152,5 @@ zoom{
     width: 770px;
     margin-left: auto;
     margin-right: auto;
-  }
-  a{
-    text-decoration: none;
-    color: goldenrod;
-  }
-  a:visited{
-    text-decoration: none;
-    color: blueviolet;
   }
 

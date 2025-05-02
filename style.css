@@ -76,7 +76,7 @@ a:hover:visited {
   width: 0px;
   height: 0px;
   position: fixed;
-  bottom: 50%;
+  bottom: 25%;
   left: 0;
   border: 10px solid rgb(177, 98, 255);
   background: rgb(177, 98, 255);

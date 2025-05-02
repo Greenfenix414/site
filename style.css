@@ -77,7 +77,7 @@ a:hover:visited {
   height: 0px;
   position: fixed;
   bottom: 0;
-  right: 0;
+  left: 0;
   border: 10px solid rgb(177, 98, 255);
   background: rgb(177, 98, 255);
 }
@@ -88,7 +88,7 @@ a:hover:visited {
   background: rgb(177, 98, 255);
   position: fixed;
   bottom: 0;
-  right: 0;
+  left: 0;
   border: 10px solid #32E4C4;
 }
 @keyframes openup {

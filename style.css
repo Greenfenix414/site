@@ -87,7 +87,7 @@ a:hover:visited {
   height: 200px;
   background: rgb(177, 98, 255);
   position: fixed;
-  bottom: 50%;
+  bottom: calc(50%-100px);
   left: 0;
   border: 10px solid #32E4C4;
 }
@@ -96,6 +96,7 @@ a:hover:visited {
     width: 0px;
     height: 0px;
     border: 10px solid rgb(177, 98, 255);
+    bottom: 50%;
     background: rgb(177, 98, 255);
   }
   25% {
@@ -106,6 +107,7 @@ a:hover:visited {
     width: 200px;
     height: 200px;
     border: 10px solid #32E4C4;
+    bottom: calc(50%-100px);
   }
 }
 a.plink {
@@ -153,4 +155,3 @@ a.plink:hover:visited {
     margin-left: auto;
     margin-right: auto;
   }
-

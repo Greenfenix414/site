@@ -9,10 +9,11 @@
     <link href="/site/style.css" rel="stylesheet" type="text/css" media="all" />
     <title>Beans!</title>
     <link rel="icon" href="/site/assets/goober.svg" type="image/x-icon">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <style>
-
         #toybox {
             width: 800px;
             height: 600px;
@@ -42,19 +43,20 @@
             z-index: 1000;
             width: 400px;
         }
-
     </style>
 </head>
 
 <body>
     <div id="explain">
         <h2>Toybox</h2> An easy script for making a box full of toys!<br> <br> Just include <a
-            href="toybox.js">toybox.js</a> at the bottom of your page, and make sure you have one element with
-        id="toybox" and all the child elements will be animated
+            href="toybox.js">toybox.js</a> 
     </div>
     <div id="toybox">
         <!-- any regular dom element here will get position:absoluted and moved around based on its size you can add padding etc to modify this size -->
-        <img src="/site/assets/goober.svg" width="100" height="100"> <img src="/site/art/assets/jim.png" width="120" height="120"><img src="/site/art/assets/jim.png" width="130" height="130"><img src="/site/art/assets/jim.png" width="90" height="90"></div>
+        <img src="/site/assets/goober.svg" width="100" height="100"> <img src="/site/art/assets/jim.png" width="120"
+            height="120"><img src="/site/art/assets/jim.png" width="130" height="130"><img
+            src="/site/art/assets/jim.png" width="90" height="90">
+    </div>
     <script src="toybox.js"></script>
     </head>
 

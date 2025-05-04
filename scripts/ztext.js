@@ -178,7 +178,7 @@ if (
     console.error(
       "ztext is disabled because transform-style: preserve-3d; is unsupported"
     );
-    var ztxt = new Ztextify("3D", {
+    var ztxt = new Ztextify("Ts3D", {
         depth: "30px",
         layers: 8,
         fade: true,

@@ -157,7 +157,7 @@ a.plink:hover:visited {
   }
   .newpage{
     height:1em;
-    width:auto;
+    width:60px;
 background:rgb(117, 64, 141);
 border-radius: 25%;
 display:inline-block;

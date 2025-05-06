@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <iframe name="preview" class ="bottomright" ></iframe>
+    <link href="https://melonking.net/styles/flood.css" rel="stylesheet" type="text/css" media="all" />
+    <script src="https://melonking.net/scripts/flood.js"></script>
+    <script src="/site/scripts/goo.js"></script>
+    <link href="/site/style.css" rel="stylesheet" type="text/css" media="all" />
+    <title>Beans!</title>
+    <link rel="icon" href="/site/assets/goober.svg" type="image/x-icon">
+    <style>.circle {
+
+      position: absolute;
+      background: rgb(160, 0, 61);
+      height: 100px;
+      width: 100px;
+      border-radius: 50%;
+      top: 50%;
+    }
+    
+    .circle:hover {
+      animation: colChange 1s;
+      background: green;
+      animation: l1 5s infinite;
+    }
+    .blocker {
+      position: absolute;
+      background: #ffffff;
+    background: rgba(255, 255, 255, 0.125);
+       backdrop-filter: blur(10px);
+      height: 100%;
+      width: 100%;
+      border-bottom:5px solid rgb(128,128,128,0.5);
+    
+      animation: blocker 15s infinite;
+    }
+    @keyframes blocker {
+      0% {
+        top: -100%;
+      }
+      95% {
+        top: 0%;
+      }
+      100%{
+        top: -100%;
+      }
+    }
+    @keyframes l1{
+      0%{
+        left:0px
+      }
+      100%{
+        left:500px
+      }
+    }
+    
+      </style>
+</head>
+
+<body>
+    <main>
+
+        <a href="../level3">
+          <div class="endgoal"></div>
+        </a>
+  
+        <div class="circle"></div>
+        <div class="blocker"></div>
+      </main>
+</body>
+
+</html>

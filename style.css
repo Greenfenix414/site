@@ -160,8 +160,5 @@ a.plink:hover:visited {
     width:60px;
 background:rgb(117, 64, 141);
 border-radius: 25%;
-display:inline-block;
-  }
-  div{
-    display:inline-block;
+display:inline;
   }

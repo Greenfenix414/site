@@ -164,15 +164,4 @@ border-radius: 25%;
 display:inline;
 
   }
-canvas {
-  top:0%;
-  pointer-events:none;
-  display: block;
-  position:fixed;
-  
-}
-#colorClock{
-    position: absolute;
-  border-radius: 50%;
-  border: 10px solid transparent
-}
+

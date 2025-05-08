@@ -164,3 +164,9 @@ border-radius: 25%;
 display:inline;
 
   }
+canvas {
+  top:0%;
+  pointer-events:none;
+  display: block;
+  position:fixed;
+}

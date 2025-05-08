@@ -169,4 +169,10 @@ canvas {
   pointer-events:none;
   display: block;
   position:fixed;
+  
+}
+#colorClock{
+    position: absolute;
+  border-radius: 50%;
+  border: 10px solid transparent
 }

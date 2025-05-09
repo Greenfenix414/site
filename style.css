@@ -146,7 +146,7 @@ a.plink:hover:visited {
   
   .stuffonshelf {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-\\
     align-items: flex-end;
     position: relative;
     z-index: 10;
@@ -164,4 +164,9 @@ border-radius: 25%;
 display:inline;
 
   }
-
+canvas {
+  top:0%;
+  pointer-events:none;
+  display: block;
+  position:fixed;
+}

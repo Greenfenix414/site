@@ -146,7 +146,7 @@ a.plink:hover:visited {
   
   .stuffonshelf {
     display: flex;
-    justify-content: space-\\
+    justify-content: space;
     align-items: flex-end;
     position: relative;
     z-index: 10;
@@ -155,6 +155,7 @@ a.plink:hover:visited {
     margin-left: auto;
     margin-right: auto;
   }
+
   .newpage{
     padding-left:10px;
     padding-right:10px;

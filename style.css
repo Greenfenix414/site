@@ -179,4 +179,6 @@ top:0%;
 right:0%;
 width:200px;
 height:200px;
+border:0px solid transparent;
+position:absolute;
 }

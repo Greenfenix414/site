@@ -181,4 +181,5 @@ width:220px;
 height:220px;
 border:0px solid transparent;
 position:absolute;
+pointer-events: none;
 }

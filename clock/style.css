@@ -6,6 +6,7 @@ body {
 }
 canvas {
   display: block;
+  border:transparent'
 }
 #colorClock {
   top:0%;

@@ -21,7 +21,7 @@ $("#saveButton").click(function() {
   if(fileName){
     file=new Blob([editorText])
     downloader.href=URL.createObjectURL(file)
-    console.log(downloader.href+" The url of the saved text(if u wann share it or smthn idk)")
+    console.log(downloader.href+" The url of the saved text(idk what you would use it for as its very likely deleted by now :/)")
     downloader.download=fileName
     downloader.click()
   }

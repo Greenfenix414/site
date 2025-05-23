@@ -1,0 +1,65 @@
+html {
+  background: #C9FFC6;
+}
+body {
+  margin: 0px;
+  padding: 0px;
+}
+#uploadData {
+  display: none;
+  position: absolute;
+}
+#uploadButton {
+  font-family: arial;
+  display: inline-block;
+  padding: 5px;
+  color: rgb(29, 54, 156);
+  background: rgb(67, 226, 105);
+  border: 3px solid rgb(4, 179, 120);
+  border-radius: 10px;
+  cursor: pointer;
+}
+#uploadButton:active {
+  color: rgb(54, 69, 171);
+  background: rgb(52, 211, 90);
+  border: 3px solid rgb(4, 179, 120);
+  border-radius: 10px;
+  cursor: pointer;
+}
+#saveButton {
+  font-family: arial;
+  display: inline-block;
+  padding: 5px;
+  color: rgb(29, 54, 156);
+  background: rgb(67, 226, 105);
+  border: 3px solid rgb(4, 179, 120);
+  border-radius: 10px;
+  cursor: pointer;
+}
+#saveButton:active {
+  color: rgb(54, 69, 171);
+  background: rgb(52, 211, 90);
+  border: 3px solid rgb(4, 179, 120);
+  border-radius: 10px;
+  cursor: pointer;
+}
+editArea{
+  display:block;
+  margin:7px;
+  background:#C9FFC6;
+  border:5px solid rgb(169,169,252);
+    border: none;
+padding:10px;
+outline:none;
+}
+borderwrapper{
+  
+    display:inline-block;
+
+
+ background: conic-gradient(rgba(169, 169, 252, 1) 0%, rgba(169, 169, 252, 1) 25%, rgba(88, 232, 136, 1) 25%, rgba(88, 232, 136, 1) 50%, rgba(247, 255, 128, 1) 50%, rgba(247, 255, 128, 1) 75%, rgba(247, 116, 142, 1) 75%);
+}
+#downloader{
+  display:none;
+  pointer-events:none;
+}

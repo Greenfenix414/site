@@ -20,7 +20,7 @@ $("#saveButton").click(function() {
   fileName=prompt("What will you call the file?","fenix.txt")
   console.log(fileName)
   if(fileName){
-    file=new Blob([(textArea.innerHTML.replace(/<div>/gi,`${String.fromCharCode(13)}`).replace(/<\/div>/gi,""))])
+    file=new Blob([(textArea.innerHTML.replace(/<div>/gi,`${String.fromCharCode(13)}`).replace(/<\/div>/gi,"").replace(/&nbsp/gi,"r"))])
     downloader.href=URL.createObjectURL(file)
     console.log(downloader.href+" The url of the saved text(if u wann share it or smthn idk)")
     downloader.download=fileName

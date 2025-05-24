@@ -1,21 +1,26 @@
-strong{
-    color:rgb(128, 0, 0)
+strong {
+  color: rgb(128, 0, 0)
+}
 
+body,
+html {
+  background: linear-gradient(135deg, rgba(6, 209, 84, 1) 0%, rgba(255, 246, 161, 1) 100%);
 }
-body,html{
-    background: linear-gradient(135deg,rgba(6, 209, 84, 1) 0%, rgba(255, 246, 161, 1) 100%);
+
+html {
+  height: 100vh;
 }
-html{
-  height:100vh;
-}
+
 zoom {
   animation: jump 0.5s;
 }
+
 shake {
   font-weight: 700;
   animation: shake 0.2s infinite;
   text-decoration: overline rgb(81, 133, 68) 2px;
 }
+
 shake:hover {
   font-weight: 700;
   animation: none;
@@ -29,12 +34,14 @@ shake:hover {
     padding-top: 0px;
     padding-bottom: 3px;
   }
+
   50% {
     padding-left: 0px;
     padding-right: 3px;
     padding-top: 3px;
     padding-bottom: 0px;
   }
+
   100% {
     padding-left: 3px;
     padding-right: 0px;
@@ -42,39 +49,47 @@ shake:hover {
     padding-bottom: 3px;
   }
 }
+
 @keyframes jump {
   0% {
     padding-right: 100%;
   }
+
   100% {
     padding-right: 0px;
   }
 }
+
 strong {
   background: rgb(120, 255, 186);
 }
+
 a {
   font-weight: 700;
   text-decoration: none;
   color: #117900;
 }
+
 a:hover {
   font-weight: 700;
   text-decoration: underline#117900 2px;
   color: #117900;
   cursor: pointer;
 }
+
 a:visited {
   font-weight: 700;
   text-decoration: none;
   color: #00795A;
 }
+
 a:hover:visited {
   font-weight: 700;
   text-decoration: underline#00795A 2px;
   color: #00795A;
   cursor: pointer;
 }
+
 .bottomright {
   width: 0px;
   height: 0px;
@@ -84,6 +99,7 @@ a:hover:visited {
   border: 10px solid rgb(177, 98, 255);
   background: rgb(177, 98, 255);
 }
+
 .bottomright:hover {
   animation: openup 0.2s;
   width: 500px;
@@ -94,6 +110,7 @@ a:hover:visited {
   left: 0;
   border: 10px solid #32E4C4;
 }
+
 @keyframes openup {
   0% {
     width: 0px;
@@ -102,10 +119,12 @@ a:hover:visited {
 
     background: rgb(177, 98, 255);
   }
+
   25% {
     border: 10px solid rgb(177, 98, 255);
     background: rgb(177, 98, 255);
   }
+
   100% {
     width: 500px;
     height: 500px;
@@ -113,22 +132,26 @@ a:hover:visited {
 
   }
 }
+
 a.plink {
   font-weight: 700;
   text-decoration: none;
   color: #CC5F00;
 }
+
 a.plink:hover {
   font-weight: 700;
   text-decoration: underline #CC5F00 2px;
   color: #CC5F00;
   cursor: pointer;
 }
+
 a.plink:visited {
   font-weight: 700;
   text-decoration: none;
   color: #CC1100;
 }
+
 a.plink:hover:visited {
   font-weight: 700;
   text-decoration: underline #CC1100 2px;
@@ -136,50 +159,53 @@ a.plink:hover:visited {
   cursor: pointer;
 }
 
-  .shelf {
-    display: block;
-    z-index: 9;
-    content: url("https://i.imgur.com/8gP8beF.png");
-    position: relative;
-    width: 941px;
-    height: 175px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  
-  .stuffonshelf {
-    display: flex;
-    justify-content: space;
-    align-items: flex-end;
-    position: relative;
-    z-index: 10;
-    margin-bottom: -80px; /* This is what actually puts the stuff ON the shelf instead of hovering above it */
-    width: 770px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .newpage{
-    padding-left:10px;
-    padding-right:10px;
-
-background:rgb(198, 123, 233);
-border-radius: 25%;
-display:inline;
-
-  }
-canvas {
-  top:0%;
-  pointer-events:none;
+.shelf {
   display: block;
-  position:fixed;
+  z-index: 9;
+  content: url("https://i.imgur.com/8gP8beF.png");
+  position: relative;
+  width: 941px;
+  height: 175px;
+  margin-left: auto;
+  margin-right: auto;
 }
-#clock{
-top:0%;
-right:0%;
-width:220px;
-height:220px;
-border:0px solid transparent;
-position:absolute;
-pointer-events: none;
+
+.stuffonshelf {
+  display: flex;
+  justify-content: space;
+  align-items: flex-end;
+  position: relative;
+  z-index: 10;
+  margin-bottom: -80px;
+  /* This is what actually puts the stuff ON the shelf instead of hovering above it */
+  width: 770px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.newpage {
+  padding-left: 10px;
+  padding-right: 10px;
+
+  background: rgb(198, 123, 233);
+  border-radius: 25%;
+  display: inline;
+
+}
+
+canvas {
+  top: 0%;
+  pointer-events: none;
+  display: block;
+  position: fixed;
+}
+
+#clock {
+  top: 0%;
+  right: 0%;
+  width: 220px;
+  height: 220px;
+  border: 0px solid transparent;
+  position: absolute;
+  pointer-events: none;
 }

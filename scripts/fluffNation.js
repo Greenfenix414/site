@@ -1,0 +1,1 @@
+console.group("Symbol gang"); console.error("<I'm an ⓧ look at me)"); console.warn("<yeah well I'm a ⚠ and I'm golden because I'm so cool)"); console.log("<Well look at me I'm Greenfenix's sanity)"); console.groupEnd();

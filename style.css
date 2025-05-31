@@ -210,3 +210,7 @@ canvas {
   position: absolute;
   pointer-events: none;
 }
+#flood,
+.wav{
+  opacity: 0.5;
+}

@@ -189,7 +189,7 @@ a.plink:hover:visited {
   padding-right: 10px;
 
   background: rgb(198, 123, 233);
-  border-radius: 25%;
+  border-radius: 10px;
   display: inline;
 
 }

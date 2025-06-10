@@ -1,4 +1,4 @@
-
+import { addPondiverseButton } from "https://www.pondiverse.com/pondiverse.js";
 addPondiverseButton(() => {
   return {
     type: "example",

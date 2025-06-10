@@ -129,7 +129,7 @@ const PONDIVERSE_BUTTON_STYLE = `
 // FETCH PONDIVERSE CREATIONS //
 //============================//
 // For getting a list of all creations
- async function fetchPondiverseCreations({ store = DEFAULT_STORE } = {}) {
+export async function fetchPondiverseCreations({ store = DEFAULT_STORE } = {}) {
   const response = await fetch(store.getCreations);
   const json = await response.json();
   const creations = json.rows ?? json.items;
@@ -140,7 +140,7 @@ const PONDIVERSE_BUTTON_STYLE = `
 // FETCH PONDIVERSE CREATION //
 //===========================//
 // For getting a single creation by its id
-async function fetchPondiverseCreation(
+export async function fetchPondiverseCreation(
   creation,
   { store = DEFAULT_STORE } = {}
 ) {
@@ -155,7 +155,7 @@ async function fetchPondiverseCreation(
 // DELETE PONDIVERSE CREATION //
 //============================//
 // For deleting a creation by its id
- async function deletePondiverseCreation(
+export async function deletePondiverseCreation(
   id,
   { store = DEFAULT_STORE, password = "" } = {}
 ) {
@@ -174,7 +174,7 @@ async function fetchPondiverseCreation(
 // GET PONDIVERSE CREATION IMAGE URL //
 //===================================//
 // Get the image URL for a creation
-function getPondiverseCreationImageUrl(
+export function getPondiverseCreationImageUrl(
   creation,
   { store = DEFAULT_STORE } = {}
 ) {
@@ -190,7 +190,7 @@ function getPondiverseCreationImageUrl(
 //=======================//
 // ADD PONDIVERSE BUTTON //
 //=======================//
-function addPondiverseButton(
+export function addPondiverseButton(
   getPondiverseCreation,
   { store = DEFAULT_STORE } = {}
 ) {
@@ -348,7 +348,7 @@ function addPondiverseDialog(
 // OPEN PONDIVERSE DIALOG //
 //========================//
 // Use this if you want to programmatically open the dialog
-function openPondiverseDialog(
+export function openPondiverseDialog(
   getPondiverseCreation = window["getPondiverseCreation"],
   { store = DEFAULT_STORE } = {}
 ) {
@@ -397,7 +397,7 @@ function openPondiverseDialog(
 // CLOSE PONDIVERSE DIALOG //
 //=========================//
 // Use this if you want to programmatically close the dialog
- function closePondiverseDialog() {
+export function closePondiverseDialog() {
   /** @type {HTMLDialogElement | null} */
   const dialog = document.querySelector("#pondiverse-dialog");
   if (!dialog) {

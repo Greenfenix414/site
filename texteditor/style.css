@@ -9,7 +9,7 @@ body {
   display: none;
   position: absolute;
 }
-#uploadButton {
+#uploadButton,#saveButton,#pondButton {
   font-family: arial;
   display: inline-block;
   padding: 5px;
@@ -19,30 +19,15 @@ body {
   border-radius: 10px;
   cursor: pointer;
 }
-#uploadButton:active {
+#uploadButton:active,#saveButton:active,#pondButton:active {
   color: rgb(54, 69, 171);
   background: rgb(52, 211, 90);
   border: 3px solid rgb(4, 179, 120);
   border-radius: 10px;
   cursor: pointer;
 }
-#saveButton {
-  font-family: arial;
-  display: inline-block;
-  padding: 5px;
-  color: rgb(29, 54, 156);
-  background: rgb(67, 226, 105);
-  border: 3px solid rgb(4, 179, 120);
-  border-radius: 10px;
-  cursor: pointer;
-}
-#saveButton:active {
-  color: rgb(54, 69, 171);
-  background: rgb(52, 211, 90);
-  border: 3px solid rgb(4, 179, 120);
-  border-radius: 10px;
-  cursor: pointer;
-}
+
+
 editArea{
   display:block;
   margin:7px;

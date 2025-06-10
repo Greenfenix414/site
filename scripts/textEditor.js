@@ -1,3 +1,10 @@
+addPondiverseButton(() => {
+  return {
+    type: "example",
+    data: "example data",
+    image: canvas?.toDataURL("/site/art/assets/jim.png"),
+  };
+});
 document.addEventListener("DOMContentLoaded", function () {
   button = document.getElementById("uploadData");
   textArea = document.getElementById("editArea");

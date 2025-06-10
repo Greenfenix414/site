@@ -27,6 +27,9 @@ $("#saveButton").click(function() {
     downloader.click()
   }
 });
+$("#pondButton").click(function() {
+openPondiverseDialog()
+});
 $(document).on("keypress", function (e) {
   e = e || window.event;
 

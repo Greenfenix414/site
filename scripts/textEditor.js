@@ -1,5 +1,4 @@
 import * as pondy from "/site/apis/pondiverse.js";
-Object.assign(global, pondy);
 document.addEventListener("DOMContentLoaded", function () {
   button = document.getElementById("uploadData");
   textArea = document.getElementById("editArea");
@@ -30,7 +29,7 @@ $("#saveButton").click(function() {
   }
 });
 $("#pondButton").click(function() {
-openPondiverseDialog()
+pondy.openPondiverseDialog()
 });
 $(document).on("keypress", function (e) {
   e = e || window.event;

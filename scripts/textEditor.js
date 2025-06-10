@@ -1,4 +1,3 @@
-import * as pondy from "/site/apis/pondiverse.js";
 document.addEventListener("DOMContentLoaded", function () {
   button = document.getElementById("uploadData");
   textArea = document.getElementById("editArea");
